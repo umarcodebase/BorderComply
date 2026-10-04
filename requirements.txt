@@ -1,6 +1,8 @@
-streamlit>=1.46,<2
+# BorderComply Pakistan MVP
+# Use Python 3.12 on Streamlit Community Cloud.
+streamlit>=1.61,<2
 crewai[google-genai]==1.15.23
-pydantic>=2.8,<3
+pydantic>=2.12,<3
 requests>=2.32,<3
 beautifulsoup4>=4.12,<5
 pypdf>=5.0,<7

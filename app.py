@@ -1,12 +1,33 @@
 import io
 import os
 import re
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import List, Literal, Dict
 
 import requests
 import streamlit as st
+
+BASE_DIR = Path(__file__).resolve().parent
+LOGO_PATH = BASE_DIR / "logo.jpg"
+RESOURCES_PATH = BASE_DIR / "resources.txt"
+DEFAULT_MODEL = "gemini/gemini-3.8-flash"
+
+# CrewAI 1.15.23 declares Python >=3.10 and <3.14.
+# Streamlit Community Cloud may default to Python 3.14, so fail gracefully
+# before importing CrewAI/ChromaDB rather than exposing a cryptic Pydantic error.
+if sys.version_info >= (3, 14):
+    st.set_page_config(page_title="BorderComply | Environment Check", page_icon="⚠️", layout="centered")
+    st.title("BorderComply")
+    st.error("Python 3.14 is not supported by the current CrewAI release used by this MVP.")
+    st.markdown(
+        "This app requires **Python 3.12** on Streamlit Community Cloud. "
+        "Open the app deployment settings, choose **Python 3.12** under Advanced settings, "
+        "then redeploy the app. Do not change the Gemini key or app code for this error."
+    )
+    st.stop()
+
 from bs4 import BeautifulSoup
 from pydantic import BaseModel, Field
 from pypdf import PdfReader
@@ -15,13 +36,7 @@ from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.enums import TA_LEFT, TA_CENTER
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, PageBreak
-
 from crewai import Agent, Crew, Process, Task, LLM
-
-BASE_DIR = Path(__file__).resolve().parent
-LOGO_PATH = BASE_DIR / "logo.jpg"
-RESOURCES_PATH = BASE_DIR / "resources.txt"
-DEFAULT_MODEL = "gemini/gemini-3.8-flash"
 
 st.set_page_config(
     page_title="BorderComply | Pakistan",
