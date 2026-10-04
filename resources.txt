@@ -1,0 +1,75 @@
+# BorderComply Pakistan — Official Source Registry
+# One source per block. The application may fetch these pages at run time.
+# Regulatory claims in the UI/report must be tied to one or more source IDs from this file.
+
+[S1]
+TITLE=Pakistan Single Window (PSW)
+AUTHORITY=Pakistan Single Window
+URL=https://psw.gov.pk/
+SCOPE=Integrated digital platform for import, export and transit regulatory requirements; Customs and Other Government Agencies.
+
+[S2]
+TITLE=PSW Subscription & Services
+AUTHORITY=Pakistan Single Window
+URL=https://psw.gov.pk/subscription
+SCOPE=PSW subscription, Customs registration, OGA licences/permits/certificates and electronic payments.
+
+[S3]
+TITLE=Trade Information Portal of Pakistan (TIPP)
+AUTHORITY=Government of Pakistan
+URL=https://www.tipp.gov.pk/
+SCOPE=Trade procedures, agencies, documents and process information.
+
+[S4]
+TITLE=Ministry of Commerce — SROs / Notifications
+AUTHORITY=Ministry of Commerce, Government of Pakistan
+URL=https://www.commerce.gov.pk/sros/
+SCOPE=Current and historical import/export SROs, notifications and amendments.
+
+[S5]
+TITLE=Ministry of Commerce — Policies
+AUTHORITY=Ministry of Commerce, Government of Pakistan
+URL=https://www.commerce.gov.pk/policies/
+SCOPE=Import Policy Order, Export Policy Order and National Tariff Policy resources.
+
+[S6]
+TITLE=Pakistan Customs Tariff
+AUTHORITY=Federal Board of Revenue (FBR), Government of Pakistan
+URL=https://www.fbr.gov.pk/categ/laws/144
+SCOPE=Current customs tariff resources including FY 2026-27 tariff and Fifth Schedule.
+
+[S7]
+TITLE=Import & Export — PSQCA
+AUTHORITY=Pakistan Standards and Quality Control Authority (PSQCA)
+URL=https://www.psqca.com.pk/import-export/
+SCOPE=Inspection and importer guidance for mandatory/regulatory products and applicable quality standards.
+
+[S8]
+TITLE=TDAP — Export Procedure & Documentation FAQ
+AUTHORITY=Trade Development Authority of Pakistan (TDAP)
+URL=https://tdap.gov.pk/frequently-asked-questions/
+SCOPE=Export procedure factors and commonly used export documentation.
+
+[S9]
+TITLE=Foreign Exchange Manual
+AUTHORITY=State Bank of Pakistan (SBP)
+URL=https://www.sbp.org.pk/laws-regulations/foreign-exchange-manual
+SCOPE=Foreign-exchange rules and chapters covering exports and imports.
+
+[S10]
+TITLE=SBP — Export Undertaking/Declaration in PSW
+AUTHORITY=State Bank of Pakistan (SBP)
+URL=https://www.sbp.org.pk/circulars/epd-circular-letter-no-03-of-2025
+SCOPE=Export undertaking/declaration requirements in PSW under the Foreign Exchange Manual.
+
+[S11]
+TITLE=Access2Markets — My Trade Assistant
+AUTHORITY=European Commission
+URL=https://trade.ec.europa.eu/access-to-markets/en/my-trade-assistant
+SCOPE=EU import market-access information, tariffs, product requirements and procedures by product/origin/destination.
+
+[S12]
+TITLE=UK Trade Tariff
+AUTHORITY=Government of the United Kingdom
+URL=https://www.gov.uk/trade-tariff
+SCOPE=UK commodity codes, import/export tariff information and related requirements.
